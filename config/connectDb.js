@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const colors = require('colors');
 
 const connectDb = async () => {
-    mongoose.connect(process.env.MONGO_URL || "mongodb://localhost:27017/EXPENSE2025", {
+    mongoose.connect(process.env.MONGO_URL || "mongodb+srv://Deepankar001:2344@cluster0.qzmrs.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", {
         useNewUrlParser: true,
         useUnifiedTopology: true,
     })
